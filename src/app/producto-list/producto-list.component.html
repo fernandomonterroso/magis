@@ -1,0 +1,183 @@
+<main>
+  <div class="position-relative">
+    <!-- shape Hero -->
+    <section class="section section-lg section-shaped pb-250">
+      <div class="shape shape-style-1 shape-default">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- SVG separator -->
+      <div class="separator separator-bottom separator-skew">
+        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+    </section>
+    <!-- 1st Hero Variation -->
+  </div>
+  <section class="section section-lg pt-lg-0 mt--200">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="row row-grid">
+            <div class="col-lg-4">
+              <div class="card card-lift--hover shadow border-0" >
+                <div class="card-body">
+                  <div>
+                    <img class="card-img-top" 
+                    [src]="imgSrc"
+                    (mouseover)="imgSrc = '/assets/img/brand/favicon0.png'"
+                    (mouseout)="imgSrc = 'https://www.ediltecnico.it/wp-content/uploads/2017/06/casa-300x223.png'"
+                    alt="Card image cap">
+                    <span class="badge badge-pill badge-primary">angular</span>
+                    <span class="badge badge-pill badge-primary">ng-bootstrap</span>
+                    <span class="badge badge-pill badge-primary">creative</span>
+                  </div>
+                  <h6 class="text-primary text-uppercase">Download Argon</h6>
+                 
+                  <div class="cta">
+                    <div class="price">$130</div>
+                    <button class="btnCard">Add to cart<span class="bg"></span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Card3-->
+            <div class="col-lg-4">
+              <div class="card card-lift--hover shadow border-0">
+                <div class="card-body py-5">
+                  <div class="icon icon-shape icon-shape-success rounded-circle mb-4">
+                    <i class="ni ni-istanbul"></i>
+                  </div>
+                  <h6 class="text-success text-uppercase">Build Something</h6>
+                  <p class="description mt-3">Argon is a great free UI package based on Angular that includes the most important components and features.</p>
+                  <div>
+                    <span class="badge badge-pill badge-success">business</span>
+                    <span class="badge badge-pill badge-success">vision</span>
+                    <span class="badge badge-pill badge-success">success</span>
+                  </div>
+                  <a href="javascript:void(0)" class="btn btn-success mt-4">Learn more</a>
+                </div>
+              </div>
+            </div>
+
+            <!--Card3-->
+            <div class="col-lg-4">
+              <div class="card card-lift--hover shadow border-0">
+                <div class="card-body py-5">
+                  <div class="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                    <i class="ni ni-planet"></i>
+                  </div>
+                  <h6 class="text-warning text-uppercase">Prepare Launch</h6>
+                  <p class="description mt-3">Argon is a great free UI package based on Angular that includes the most important components and features.</p>
+                  <div>
+                    <span class="badge badge-pill badge-warning">marketing</span>
+                    <span class="badge badge-pill badge-warning">product</span>
+                    <span class="badge badge-pill badge-warning">launch</span>
+                  </div>
+                  <a href="javascript:void(0)" class="btn btn-warning mt-4">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <table datatable [dtOptions]="dtOptions" id="myTable" class="table table-striped" >  
+    <thead>  
+      <tr>  
+        <th>ENO</th>  
+        <th>EMPName</th>  
+        <th>Country</th>  
+        <th>Salary</th>  
+      </tr>  
+    </thead>  
+    <tbody>  
+      <tr>  
+        <td>001</td>  
+        <td>Anusha</td>  
+        <td>India</td>  
+        <td>10000</td>  
+      </tr>  
+      <tr>  
+        <td>002</td>  
+        <td>Charles</td>  
+        <td>United Kingdom</td>  
+        <td>28000</td>  
+      </tr>  
+      <tr>  
+        <td>003</td>  
+        <td>Sravani</td>  
+        <td>Australia</td>  
+        <td>7000</td>  
+      </tr>  
+   <tr>  
+        <td>004</td>  
+        <td>Amar</td>  
+        <td>India</td>  
+        <td>18000</td>  
+      </tr>  
+      <tr>  
+        <td>005</td>  
+        <td>Lakshmi</td>  
+        <td>India</td>  
+        <td>12000</td>  
+      </tr>  
+      <tr>  
+        <td>006</td>  
+        <td>James</td>  
+        <td>Canada</td>  
+        <td>50000</td>  
+      </tr>  
+  
+   <tr>  
+        <td>007</td>  
+        <td>Ronald</td>  
+        <td>US</td>  
+        <td>75000</td>  
+      </tr>  
+      <tr>  
+        <td>008</td>  
+        <td>Mike</td>  
+        <td>Belgium</td>  
+        <td>100000</td>  
+      </tr>  
+      <tr>  
+        <td>009</td>  
+        <td>Andrew</td>  
+        <td>Argentina</td>  
+        <td>45000</td>  
+      </tr>  
+  
+    <tr>  
+        <td>010</td>  
+        <td>Stephen</td>  
+        <td>Austria</td>  
+        <td>30000</td>  
+      </tr>  
+      <tr>  
+        <td>011</td>  
+        <td>Sara</td>  
+        <td>China</td>  
+        <td>750000</td>  
+      </tr>  
+      <tr>  
+        <td>012</td>  
+        <td>JonRoot</td>  
+        <td>Argentina</td>  
+        <td>65000</td>  
+      </tr>  
+    </tbody>  
+  </table> 
+ 
+</main>
