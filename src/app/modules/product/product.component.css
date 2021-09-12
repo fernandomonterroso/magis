@@ -44,11 +44,15 @@ body {
   font-family:arial;
   background-color:#ddd;
 }
+<<<<<<< HEAD
 img {
   border:0;
   width:100%;
   height:100%;
 }
+=======
+
+>>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
 #team {
   max-width:96rem;
   width:100%;
@@ -72,8 +76,13 @@ img {
   align-content:flex-end;
 }
 #figure {
+<<<<<<< HEAD
   width:12.5rem;
   height:12.5rem;
+=======
+  width:6.5rem;
+  height:6.5rem;
+>>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
   display:block;
   margin:0.5rem 1rem 4rem 0.5rem;
   padding:0;
@@ -108,11 +117,14 @@ figcaption {
 .cta {
     padding: 20px 20px 5px;
 
+<<<<<<< HEAD
     &::after {
       content: '';
       display: table;
       clear: both;
     }
+=======
+>>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
   }
 
   .price {
@@ -127,7 +139,11 @@ figcaption {
   .btnCard {
     position: relative;
     z-index: 1;
+<<<<<<< HEAD
     float: right;
+=======
+
+>>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
     display: inline-block;
     font-size: 13px;
     font-weight: 900;
@@ -143,6 +159,7 @@ figcaption {
     border: 1px solid #FF3100;
     border-radius: 20px;
     overflow: hidden;
+<<<<<<< HEAD
     
     & .bg {
       width: 101%;
@@ -164,3 +181,267 @@ figcaption {
     }
     
   }
+=======
+  }
+
+/*
+======================
+Go Up
+======================
+*/
+
+.goto-top:link,
+.goto-top:visited {
+  
+  position: fixed;
+  right: 2%;
+  bottom: 10%;
+  padding: 0.8rem 1.4rem;
+  border-radius: 1rem;
+  
+  visibility: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.show-top:link,
+.show-top:visited {
+  visibility: visible;
+  z-index: 1999;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(0.5);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  0% {
+    transform: scale(1);
+  }
+}
+
+.goto-top svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: var(--white);
+}
+
+.goto-top:hover {
+  background-color: #000;
+}
+
+@media only screen and (max-width: 1200px) {
+  .right__content {
+    width: 100%;
+  }
+
+  .right__content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .popup__right {
+    width: 100%;
+  }
+
+  .popup__left {
+    display: none;
+  }
+
+  .right__content h1 {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .right__content h1 {
+    font-size: 4rem;
+  }
+
+  .right__content p {
+    font-size: 1.6rem;
+  }
+
+  .popup__form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.8rem 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .goto-top:link,
+  .goto-top:visited {
+    right: 5%;
+    bottom: 5%;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .popup__right {
+    padding: 0 1.6rem;
+  }
+
+  .popup__content {
+    height: 35rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .right__content {
+    width: 100%;
+  }
+
+  .right__content h1 {
+    font-size: 3rem;
+  }
+
+  .right__content p {
+    font-size: 1.4rem;
+  }
+
+  .popup__form {
+    width: 100%;
+    padding: 1.5rem 0;
+    margin-bottom: 1.3rem;
+  }
+
+  .right__content a:link,
+  .right__content a:visited {
+    padding: 1.5rem 3rem;
+  }
+
+  .popup__close {
+    top: 1rem;
+    right: 1rem;
+    padding: 1.3rem;
+  }
+
+  .popup__close svg {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+}
+
+/* ff */
+
+
+/* For sticky footer - grow to fill the space */
+
+
+.containerPerson {
+
+	margin: 0 auto;
+
+}
+
+
+.grida {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+  
+}
+
+
+
+.grida .item {
+  width: 100%;
+	display: grid;
+	flex-direction: column;
+  /*
+	border: 1px #ccc solid;
+	padding: 10px;
+	box-shadow: 1px 1px 2px #ccc;
+  */
+}
+
+.item{
+  border: 1px #ccc solid;
+	padding: 5px;
+	box-shadow: 1px 1px 2px #ccc;
+  border-radius: 5px;
+}
+
+
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+ }
+}
+.rainbow {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+  
+}
+.rainbow::before {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  
+  
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  animation: rotate 6s linear infinite;
+}
+
+
+
+/* Desktop */
+@media (min-width: 768px) {
+	.grida {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.grid .item img {
+		width: 60px;
+	}
+}
+
+
+/* mis clases*/
+
+.centrar{
+  display: table;
+  margin: 0 auto;
+}
+
+/*IMAGEN*/
+.box{
+  display:flex;
+  background: #CCC;
+  overflow: hidden;
+}
+
+.box img{
+  width:  200px;
+  height: 200px;
+  object-fit: cover;
+  object-fit:scale-down;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@supports(object-fit: cover){
+  .box img{
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+>>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
