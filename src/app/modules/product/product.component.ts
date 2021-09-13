@@ -61,17 +61,11 @@ export class ProductComponent implements OnInit {
       this.limit = 12;
     };
     //this.getProductos(this.page1,this.limit);
-<<<<<<< HEAD
-    
-  }
-
-=======
     this.animaciones();
   }
 
 
   
->>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
   close(alert: IAlert) {
     this.alerts.splice(this.alerts.indexOf(alert), 1);
   }
@@ -84,7 +78,6 @@ export class ProductComponent implements OnInit {
   //itemsPerPage = 12;
   pageSize: number =0;
   changePage(pageNum,limitPage){
-<<<<<<< HEAD
     console.log("page::",pageNum);
     console.log("limit::",limitPage);
     this.limit;
@@ -93,25 +86,11 @@ export class ProductComponent implements OnInit {
     var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + 
     '?page='+pageNum+'&limit='+this.limit;
     window.history.pushState({path:newurl},'',newurl);
-=======
-  
-    this._router.navigate([],{ queryParams: { page: pageNum, limit: this.limit } });
-    /*
-    var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + 
-    '?page='+pageNum+'&limit='+this.limit;
-    window.history.pushState({path:newurl},'',newurl);
-
-    */
-
->>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
     this.getProductos(pageNum,this.limit);
   }
 
   public changePagesize(pageSize:number,num: number): void {
-<<<<<<< HEAD
     console.log("que pedo");
-=======
->>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
     var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + 
     '?page='+pageSize+'&limit='+num;
     window.history.pushState({path:newurl},'',newurl);
@@ -134,23 +113,11 @@ export class ProductComponent implements OnInit {
      
       response=>{
         this.respuesta = response;
-<<<<<<< HEAD
-        //console.log(response);
-        if(response.productos){
-          
-          this.modelProducto =   response.productos;
-          console.log(this.modelProducto);
-          this.descuentoGlobal =   response.general[0].porcentaje;
-          console.log(this.descuentoGlobal);
-          this.totalDatos = response.parametros.cantidad;
-          console.log("totalDatos",response.parametros.cantidad);
-=======
         if(response.productos){
           
           this.modelProducto =   response.productos;
           this.descuentoGlobal =   response.general[0].porcentaje;
           this.totalDatos = response.parametros.cantidad;
->>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
           this.status='Ok'
           this.spinner.hide();
         }
@@ -175,9 +142,6 @@ export class ProductComponent implements OnInit {
     //this.getTareas()
   }
 
-<<<<<<< HEAD
-  
-=======
 
   //#region 
   animaciones(){
@@ -195,6 +159,5 @@ export class ProductComponent implements OnInit {
     });
   }
   //#endregion
->>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
 
 }

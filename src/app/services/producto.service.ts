@@ -15,10 +15,6 @@ export class ProductoService {
   constructor(public _http: HttpClient) { }
 
   getProductos1(token:any):Observable<any>{
-<<<<<<< HEAD
-    console.log(token.params);
-=======
->>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
     let headers = new HttpHeaders().set('Content-Type', 'application/json');//.set('Authorization',token);
     return this._http.get(this.endpoint+'/listarProductos?page='+token.params.page+'&limit='+token.params.limit, {headers:headers})
   }

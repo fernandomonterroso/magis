@@ -44,15 +44,6 @@ body {
   font-family:arial;
   background-color:#ddd;
 }
-<<<<<<< HEAD
-img {
-  border:0;
-  width:100%;
-  height:100%;
-}
-=======
-
->>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
 #team {
   max-width:96rem;
   width:100%;
@@ -76,13 +67,8 @@ img {
   align-content:flex-end;
 }
 #figure {
-<<<<<<< HEAD
-  width:12.5rem;
-  height:12.5rem;
-=======
   width:6.5rem;
   height:6.5rem;
->>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
   display:block;
   margin:0.5rem 1rem 4rem 0.5rem;
   padding:0;
@@ -117,14 +103,6 @@ figcaption {
 .cta {
     padding: 20px 20px 5px;
 
-<<<<<<< HEAD
-    &::after {
-      content: '';
-      display: table;
-      clear: both;
-    }
-=======
->>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
   }
 
   .price {
@@ -139,11 +117,6 @@ figcaption {
   .btnCard {
     position: relative;
     z-index: 1;
-<<<<<<< HEAD
-    float: right;
-=======
-
->>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
     display: inline-block;
     font-size: 13px;
     font-weight: 900;
@@ -159,29 +132,6 @@ figcaption {
     border: 1px solid #FF3100;
     border-radius: 20px;
     overflow: hidden;
-<<<<<<< HEAD
-    
-    & .bg {
-      width: 101%;
-      height: 101%;
-      display: block!important;
-      z-index: -1;
-      opacity: 0;
-      transition: all .3s ease-in-out;
-      background: linear-gradient(135deg, #a61322, #d33f34);
-    }
-    
-    &:hover {
-      color: #fff!important;
-      border: 1px solid transparent!important;
-      
-      & .bg {
-        opacity: 1;
-      }
-    }
-    
-  }
-=======
   }
 
 /*
@@ -444,4 +394,9 @@ Go Up
     object-position: center center;
   }
 }
->>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
+
+
+.pureba {
+  text-align: center;
+  
+}

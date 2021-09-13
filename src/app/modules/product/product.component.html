@@ -1,9 +1,5 @@
 <main>
-<<<<<<< HEAD
-  <div class="position-relative">
-=======
   <div  class="position-relative" id="header">
->>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
     <!-- shape Hero -->
     <section class="section section-lg section-shaped pb-250">
       <div class="shape shape-style-1 shape-default">
@@ -31,11 +27,7 @@
 
 
   
-<<<<<<< HEAD
-  <section class="section section-lg pt-lg-0 mt--200">
-=======
   <section class="header">
->>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
     <div class="container">
 
       <ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#ff36fb" type = "pacman" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>
@@ -46,136 +38,6 @@
           <option>25</option>
           <option>100</option>
       </select>
-<<<<<<< HEAD
-      <h1><a  href="#pisicion"> al contenido</a></h1>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-lg-12">
-          <div class="row row-grid">
-            <div  *ngFor="let enc of modelProducto | keyvalue" class="col-lg-3">
-              <div class="card card-lift--hover shadow border-0" >
-                <div class="card-body">
-                  
-                  <div>
-                    
-                    <div >
-                    <img *ngIf="enc.value.imagen && enc.value.imagen[0]" style="object-fit: cover;"  class="card-img-top" 
-                    [src]="enc.value.imagen[3] ||enc.value.imagen[1]"
-                    (mouseover)="enc.value.imagen[3] = enc.value.imagen[0]"
-                    (mouseout)="enc.value.imagen[3] = enc.value.imagen[1]"
-                    alt="{{enc.value.nombre}}">
-                    <br>
-                    <h6 class="text-primary text-uppercase">{{enc.value.nombre}}</h6>
-                  </div >
-                  <div *ngIf="enc.value.imagen && enc.value.imagen[0]" > 
-                    <span *ngFor="let enc1 of enc.value.categorias" class="badge badge-pill badge-info">{{enc1.nombre}}</span>
-                  </div> 
-                  </div>
-                  
-                  
-
-                  <div *ngIf="descuentoGlobal>1 && (enc.value.descuento<descuentoGlobal || !enc.value.descuento)">
-                    
-                    <div class = "off-info">
-                      <small class="sm-title" >{{descuentoGlobal}}% OFF</small>
-                    </div>
-                    <table style="width:100%">
-                      <tr>
-                        <th>
-                          <p class="product-priceDes" [ngStyle]="descuentoGlobal>1 ?{'text-decoration': 'line-through'} : {'text-decoration': 'none'}"><strong>Q.{{enc.value.precio | number:'1.2-2'}}</strong></p>
-                        </th>
-                        <th>
-                          <p class="display-4" *ngIf="descuentoGlobal>1" class="product-price"><strong>Q.{{ enc.value.precio - ((enc.value.precio * descuentoGlobal)/100) | number:'1.2-2' }}</strong></p>
-                        </th>                     
-                      </tr>
-                    </table>
-
-                 
-                  </div>
-
-
-                  <p *ngIf="!descuentoGlobal && !enc.value.descuento" class="product-price" ><strong>Q.{{enc.value.precio | number:'1.2-2'}}</strong></p>
-
-                  <div *ngIf="enc.value.descuento>descuentoGlobal">
-                    <div class = "off-info">
-                      <small class="sm-title" >{{enc.value.descuento }}% OFF</small>
-                    </div>
-                    <table style="width:100%">
-                      <tr>
-                        <th>
-                          <p class="product-priceDes" [ngStyle]="enc.value.descuento>1 ?{'text-decoration': 'line-through'} : {'text-decoration': 'none'}"><strong>Q.{{enc.value.precio | number:'1.2-2'}}</strong></p>
-                        </th>
-                        <th>
-                          <p class="display-4" *ngIf="enc.value.descuento>1" class="product-price"><strong>Q.{{ enc.value.precio - ((enc.value.precio * enc.value.descuento)/100) | number:'1.2-2'}}</strong></p>
-                        </th>
-                        
-                      </tr>
-                    </table>
-                    
-                  </div>
-                  <button (click)="postElement(enc.value)" class="btnCard"><i class="ni ni-cart"></i> Añadir<span class="bg"></span></button>
-                  
-                </div>
-              </div>
-              <br>
-         
-            </div>
-            
-            <!--Card3
-            <div class="col-lg-4">
-              <div class="card card-lift--hover shadow border-0">
-                <div class="card-body py-5">
-                  <div class="icon icon-shape icon-shape-success rounded-circle mb-4">
-                    <i class="ni ni-istanbul"></i>
-                  </div>
-                  <h6 class="text-success text-uppercase">Build Something</h6>
-                  <p class="description mt-3">Argon is a great free UI package based on Angular that includes the most important components and features.</p>
-                  <div>
-                    <span class="badge badge-pill badge-success">business</span>
-                    <span class="badge badge-pill badge-success">vision</span>
-                    <span class="badge badge-pill badge-success">success</span>
-                  </div>
-                  <a href="javascript:void(0)" class="btn btn-success mt-4">Learn more</a>
-                </div>
-              </div>
-            </div>
-              -->
-            <!--Card3
-            <div class="col-lg-4">
-              <div class="card card-lift--hover shadow border-0">
-                <div class="card-body py-5">
-                  <div class="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                    <i class="ni ni-planet"></i>
-                  </div>
-                  <h6 class="text-warning text-uppercase">Prepare Launch</h6>
-                  <p class="description mt-3">Argon is a great free UI package based on Angular that includes the most important components and features.</p>
-                  <div>
-                    <span class="badge badge-pill badge-warning">marketing</span>
-                    <span class="badge badge-pill badge-warning">product</span>
-                    <span class="badge badge-pill badge-warning">launch</span>
-                  </div>
-                  <a href="javascript:void(0)" class="btn btn-warning mt-4">Learn more</a>
-                </div>
-              </div>
-            </div>
-              -->
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div id="pisicion" class="row justify-content-center">
-      <div class="col-1 input-group-addon">
-     
-    
-    
-      </div>
-      
-      
-      <nav aria-label="Page navigation example">
-=======
 
       </div>
 
@@ -262,7 +124,6 @@
       
       
       <nav aria-label="Page navigation example" class="centrar">
->>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
         <ngb-pagination [maxSize]="4" [pageSize]="limit" [collectionSize]="totalDatos || 50" [(page)]="page1" (pageChange)="changePage(page1)" aria-label="Default pagination">
           <ng-template ngbPaginationPrevious><i _ngcontent-c9="" class="fa fa-angle-left"></i></ng-template>
           <ng-template ngbPaginationNext><i _ngcontent-c9="" class="fa fa-angle-right"></i></ng-template>
@@ -272,15 +133,12 @@
   
   </section>
 
-<<<<<<< HEAD
-=======
   <!-- Go To -->
  
   <a [routerLink] = "[]"  fragment="header"  class="goto-top scroll-link">
     <i class="fa fa-arrow-circle-up"></i>
   </a>
 
->>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
 <!--Alertas-->
  <div id="message">
   <div  lass="toast bg-info" role="alert" aria-live="assertive" aria-atomic="true" *ngFor="let alert of alerts">

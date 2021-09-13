@@ -4,12 +4,7 @@
 
 export const environment = {
   production: true,
-<<<<<<< HEAD
   endpoint: 'http://192.168.1.5:3000/api'
-=======
-  //endpoint: 'http://192.168.1.5:3000/api'
-  endpoint: 'http://192.168.1.2:3000/api'
->>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
 };
 
 /*
