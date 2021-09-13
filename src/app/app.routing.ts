@@ -46,14 +46,10 @@ const routes: Routes =[
     CommonModule,
     BrowserModule,
     RouterModule.forRoot(routes,{
-<<<<<<< HEAD
-      useHash: false
-=======
       useHash: false,
       anchorScrolling: 'enabled',
       scrollPositionRestoration: 'enabled',
       onSameUrlNavigation: 'reload',
->>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
     })
   ],
   exports: [

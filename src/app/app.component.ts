@@ -9,10 +9,7 @@ export interface IAlert {
     strong?: string;
     message: string;
     icon?: string;
-<<<<<<< HEAD
-=======
     zindex?: number;
->>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
   }
 var didScroll;
 var lastScrollTop = 0;
@@ -69,12 +66,8 @@ export class AppComponent implements OnInit {
             type: 'danger',
             strong: 'Ocurrio un error!',
             message: "errorMessage",
-<<<<<<< HEAD
-            icon: 'ni ni-support-16'
-=======
             icon: 'ni ni-support-16',
             zindex: 99999
->>>>>>> bc3d50a (This is a new commit for what I originally planned to be amended)
             });
     
       var navbar : HTMLElement = this.element.nativeElement.children[0].children[0];
